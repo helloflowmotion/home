@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Flow in Motion | Hello Flow M.O.tion LLC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --linen: #F9F8F6;
+            --brown: #7D4C4A;
+            --rose: #D6A4A0;
+            --gray: #A7AFB9;
+            --pink: #E6D0CD;
+            --font-main: 'Be Vietnam Pro', sans-serif;
+        }
+
+        * {
+            font-family: var(--font-main) !important;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--linen);
+            color: var(--brown);
+            margin: 0;
+            line-height: 1.8;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8vh 20px 6vh 20px;
+            background-color: var(--linen);
+        }
+
+        /* Make header a clickable link back to home */
+        .header-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .header-logo {
+            width: 60px; 
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 1px solid var(--gray);
+        }
+
+        .header-content h1 {
+            font-size: 2rem;
+            font-weight: 300;
+            letter-spacing: 4px;
+            margin: 0;
+            text-transform: uppercase;
+            line-height: 1;
+        }
+
+        .header-content p.subtitle {
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+            color: var(--gray);
+            margin-top: 8px;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        section {
+            padding: 8vh 0 12vh 0;
+        }
+
+        .section-pale { 
+            background-color: var(--pink); 
+            border-radius: 60px 60px 0 0; 
+        }
+
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+
+        .profile-image {
+            width: 100%;
+            max-height: 550px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            border: 1px solid var(--brown);
+        }
+
+        .story-text {
+            font-weight: 300;
+            font-size: 1.15rem;
+        }
+
+        .story-text p {
+            margin-bottom: 25px;
+        }
+
+        .approach-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 40px 0;
+            background-color: var(--linen);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid rgba(125, 76, 74, 0.1);
+        }
+
+        .approach-list li {
+            margin-bottom: 20px;
+        }
+
+        .approach-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .approach-list strong {
+            color: var(--rose);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .closing-statement {
+            text-align: center;
+            font-size: 1.4rem;
+            margin-top: 50px;
+            font-weight: 400;
+            color: var(--brown);
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 32px;
+            text-decoration: none;
+            letter-spacing: 2px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background-color: var(--brown);
+            color: var(--linen);
+        }
+
+        .btn:hover {
+            opacity: 0.7;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 6vh 20px;
+            font-size: 0.8rem;
+            color: var(--gray);
+            background-color: var(--linen);
+        }
+
+        @media (max-width: 768px) {
+            .header-link { flex-direction: column; text-align: center; }
+            .header-logo { margin-right: 0; margin-bottom: 15px; }
+            h2 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="header-link">
+            <img src="logo.jpg" alt="Logo" class="header-logo">
+            <div class="header-content">
+                <h1>Live in Flow Motion</h1>
+                <p class="subtitle">ALIGNMENT • BREATH • INTENTION</p>
+            </div>
+        </a>
+    </header>
+
+    <main>
+        <section class="section-pale">
+            <div class="container">
+                <h2>my flow in motion</h2>
+
+                <img src="profile.jpg" alt="Founder of Hello Flow M.O.tion" class="profile-image">
+
+                <div class="story-text">
+                    <p>I used to believe that success meant moving faster, working longer, and ignoring the signals my body was sending. My 'Method of Operation' used to be simple: <em>Go, push, repeat.</em> It worked, until it didn’t.</p>
+
+                    <p>After years of navigating high-pressure environments, I realized that the secret to long-term performance isn't intensity—it’s <strong>alignment</strong>. I founded Hello Flow M.O.tion to bridge the gap between technical movement and the freedom of flow. I’m not just interested in how you move on the mat; I’m interested in how that movement serves you in your life.</p>
+
+                    <p>At Hello Flow M.O.tion, I don’t rely on 'one-size-fits-all' sequences. My approach combines:</p>
+
+                    <ul class="approach-list">
+                        <li>
+                            <strong>Precision Alignment</strong>
+                            Understanding the mechanics of your unique body.
+                        </li>
+                        <li>
+                            <strong>Functional Mobility</strong>
+                            Building strength that moves with you, not against you.
+                        </li>
+                        <li>
+                            <strong>Conscious Flow</strong>
+                            Learning to regulate your nervous system so you can leave the mat feeling energized, not drained.
+                        </li>
+                    </ul>
+
+                    <p>Whether you’re recovering from an injury, managing a desk-bound lifestyle, or looking to sharpen your movement practice, I am here to help you refine your own Method of Operation.</p>
+
+                    <p class="closing-statement">Let’s get you moving in a way that feels sustainable, smart, and undeniably yours.</p>
+
+                    <div class="btn-group">
+                        <a href="mailto:hello.flowmo@gmail.com" class="btn btn-primary">say hello</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>&copy; 2026 Hello Flow M.O.tion LLC. ALL RIGHTS RESERVED.</footer>
+
+</body>
+</html>
