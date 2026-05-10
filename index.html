@@ -4,56 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello Flow M.O.tion LLC | Yoga & Sound Healing</title>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600&family=Georgia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        /* CSS Styles */
         :root {
-            /* Modified color scheme based on the logo's four layers */
-            --bg-color: #F9F8F6; /* Soft linen white (top layer) */
-            --text-color: #7D4C4A; /* Deep reddish-brown (from silhouette) */
-            --accent-color: #D6A4A0; /* Dusty rose mauve (third layer) */
-            --border-color: #A7AFB9; /* Muted slate blue-gray (bottom layer) */
-            --hover-color: #E6D0CD; /* Very pale pink (second layer) */
-            
-            /* Apply Be Vietnam Pro to main text */
+            --bg-color: #F9F8F6; /* Linen */
+            --text-color: #7D4C4A; /* Deep Brown */
+            --accent-color: #D6A4A0; /* Dusty Rose */
+            --border-color: #A7AFB9; /* Slate Gray */
             --font-main: 'Be Vietnam Pro', sans-serif;
-            --font-heading: 'Georgia', serif; /* Preserve Georgia for main headers */
+        }
+
+        /* Set font for everything */
+        * {
+            font-family: var(--font-main) !important;
+            box-sizing: border-box;
         }
 
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
-            font-family: var(--font-main);
             margin: 0;
-            padding: 0;
             line-height: 1.6;
         }
 
-        /* Intentional use of 'Ma' (negative space) throughout */
         header {
             text-align: center;
             padding: 10vh 20px 8vh 20px;
         }
 
-        /* Center the new logo and title */
-        .logo-title-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        /* Add styling for the logo image */
         .header-logo {
             max-width: 150px;
             height: auto;
-            margin-bottom: 15px;
+            border-radius: 50%; /* Makes logo round */
+            aspect-ratio: 1/1; /* Keeps it perfectly circular */
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 1px solid var(--border-color);
         }
 
         h1 {
-            font-family: var(--font-heading);
             font-size: 2.5rem;
-            font-weight: normal;
+            font-weight: 300;
             letter-spacing: 2px;
             margin: 0;
         }
@@ -61,8 +52,8 @@
         p.subtitle {
             font-size: 1rem;
             letter-spacing: 1px;
-            color: var(--border-color); /* Muted blue-gray subtitle */
-            margin: 0;
+            color: var(--border-color);
+            margin-top: 10px;
         }
 
         .container {
@@ -76,10 +67,9 @@
             border-top: 1px solid var(--border-color);
         }
 
-        section h2 {
-            font-family: var(--font-heading);
+        h2 {
             font-size: 1.8rem;
-            font-weight: normal;
+            font-weight: 400;
             margin-bottom: 30px;
             text-align: center;
         }
@@ -93,110 +83,58 @@
         .service-item h3 {
             font-size: 1.2rem;
             margin-bottom: 10px;
-            color: var(--accent-color); /* Dusty rose accent */
-        }
-
-        .service-item p {
-            margin: 0;
-            color: var(--text-color);
+            color: var(--accent-color);
         }
 
         .btn {
             display: inline-block;
-            background-color: var(--text-color); /* Deep reddish-brown button */
+            background-color: var(--text-color);
             color: var(--bg-color);
             padding: 12px 30px;
             text-decoration: none;
-            font-size: 0.9rem;
             letter-spacing: 1px;
-            transition: background-color 0.3s ease, border-color 0.3s ease;
             margin-top: 20px;
-            border: 1px solid transparent;
-        }
-
-        .btn:hover {
-            background-color: var(--accent-color); /* Changes to Dusty rose */
-            border-color: var(--border-color); /* Add a muted blue border */
-            color: var(--text-color); /* Dark text on light hover */
-        }
-
-        .contact-box {
-            text-align: center;
         }
 
         footer {
             text-align: center;
             padding: 5vh 20px;
             font-size: 0.8rem;
-            color: var(--text-color);
-            background-color: var(--bg-color);
             border-top: 1px solid var(--border-color);
         }
 
-        /* Responsive adjustments */
         @media (min-width: 600px) {
             h1 { font-size: 3.5rem; }
-            .services-grid {
-                flex-direction: row;
-                justify-content: space-between;
-            }
-            .service-item {
-                flex: 1;
-                margin: 0 15px;
-            }
-            .service-item:first-child { margin-left: 0; }
-            .service-item:last-child { margin-right: 0; }
+            .services-grid { flex-direction: row; justify-content: space-between; }
+            .service-item { flex: 1; margin: 0 15px; }
         }
     </style>
 </head>
 <body>
-
     <header>
-        <div class="logo-title-container">
-            <img src="logo.jpg" alt="Hello Flow M.O.tion Logo" class="header-logo">
-            <h1>Hello Flow M.O.tion</h1>
-        </div>
+        <img src="logo.jpg" alt="Logo" class="header-logo">
+        <h1>Hello Flow M.O.tion</h1>
         <p class="subtitle">ALIGNMENT • BREATH • INTENTION</p>
     </header>
-
     <div class="container">
-        
         <section id="about">
             <h2>Approach</h2>
             <p style="text-align: center; max-width: 600px; margin: 0 auto;">
-                Finding stillness in movement. Through mindfully sequenced classes, we cultivate space in the body and mind. Every practice is an invitation to explore alignment, deepen the breath, and experience the profound quiet of the present moment.
+                Finding stillness in movement. Every practice is an invitation to explore alignment, deepen the breath, and experience the profound quiet of the present moment.
             </p>
         </section>
-
         <section id="offerings">
             <h2>Offerings</h2>
             <div class="services-grid">
-                <div class="service-item">
-                    <h3>Vinyasa & Hatha</h3>
-                    <p>Dynamic, 75-minute sequences focused on structural alignment and cultivating a state of flow.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Yin Yoga</h3>
-                    <p>A quiet, meditative practice utilizing long holds to target deep connective tissues and create internal space.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Sound Healing</h3>
-                    <p>Immersive auditory experiences utilizing instruments to guide the mind into deep relaxation and restoration.</p>
-                </div>
+                <div class="service-item"><h3>Vinyasa</h3><p>Flow and alignment focused practice.</p></div>
+                <div class="service-item"><h3>Yin</h3><p>Meditation in long-held stillness.</p></div>
+                <div class="service-item"><h3>Sound</h3><p>Auditory rest and restoration.</p></div>
             </div>
         </section>
-
-        <section id="contact" class="contact-box">
-            <h2>Connect</h2>
-            <p>Ready to unroll your mat?</p>
-            <a href="mailto:hello@example.com" class="btn">Inquire About Classes</a>
+        <section style="text-align: center;">
+            <a href="mailto:hello@example.com" class="btn">Connect With Us</a>
         </section>
-
     </div>
-
-    <footer>
-        &copy; 2026 Hello Flow M.O.tion LLC. All rights reserved.
-    </footer>
-
+    <footer>&copy; 2026 Hello Flow M.O.tion LLC.</footer>
 </body>
 </html>
