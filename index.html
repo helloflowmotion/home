@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Flow M.O.tion LLC | Yoga & Sound Healing</title>
+    <title>Live in Flow Motion | Hello Flow M.O.tion LLC</title>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #F9F8F6; /* Linen */
-            --text-color: #7D4C4A; /* Deep Brown */
-            --accent-color: #D6A4A0; /* Dusty Rose */
-            --border-color: #A7AFB9; /* Slate Gray */
+            --bg-color: #F9F8F6;
+            --text-color: #7D4C4A;
+            --accent-color: #D6A4A0;
+            --border-color: #A7AFB9;
             --font-main: 'Be Vietnam Pro', sans-serif;
         }
 
-        /* Set font for everything */
         * {
             font-family: var(--font-main) !important;
             box-sizing: border-box;
@@ -24,7 +23,7 @@
             background-color: var(--bg-color);
             color: var(--text-color);
             margin: 0;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         header {
@@ -33,106 +32,122 @@
         }
 
         .header-logo {
-            max-width: 150px;
+            max-width: 160px;
             height: auto;
-            border-radius: 50%; /* Makes logo round */
-            aspect-ratio: 1/1; /* Keeps it perfectly circular */
+            border-radius: 50%;
+            aspect-ratio: 1/1;
             object-fit: cover;
-            margin-bottom: 20px;
+            margin-bottom: 24px;
             border: 1px solid var(--border-color);
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             font-weight: 300;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             margin: 0;
+            text-transform: uppercase;
         }
 
         p.subtitle {
             font-size: 1rem;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
             color: var(--border-color);
-            margin-top: 10px;
+            margin-top: 12px;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
         section {
-            padding: 8vh 0;
+            padding: 10vh 0;
             border-top: 1px solid var(--border-color);
         }
 
         h2 {
-            font-size: 1.8rem;
+            font-size: 2rem;
             font-weight: 400;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             text-align: center;
+            letter-spacing: 1px;
+        }
+
+        .approach-text {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+            font-weight: 300;
+            font-size: 1.15rem;
         }
 
         .services-grid {
             display: flex;
             flex-direction: column;
-            gap: 40px;
+            gap: 50px;
         }
 
         .service-item h3 {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
             color: var(--accent-color);
+            font-weight: 400;
         }
 
         .btn {
             display: inline-block;
             background-color: var(--text-color);
             color: var(--bg-color);
-            padding: 12px 30px;
+            padding: 14px 35px;
             text-decoration: none;
-            letter-spacing: 1px;
-            margin-top: 20px;
+            letter-spacing: 1.5px;
+            margin-top: 25px;
+            transition: opacity 0.3s;
         }
+
+        .btn:hover { opacity: 0.8; }
 
         footer {
             text-align: center;
-            padding: 5vh 20px;
-            font-size: 0.8rem;
+            padding: 6vh 20px;
+            font-size: 0.85rem;
             border-top: 1px solid var(--border-color);
+            color: var(--border-color);
         }
 
         @media (min-width: 600px) {
-            h1 { font-size: 3.5rem; }
+            h1 { font-size: 3.8rem; }
             .services-grid { flex-direction: row; justify-content: space-between; }
-            .service-item { flex: 1; margin: 0 15px; }
+            .service-item { flex: 1; margin: 0 20px; }
         }
     </style>
 </head>
 <body>
     <header>
         <img src="logo.jpg" alt="Logo" class="header-logo">
-        <h1>Hello Flow M.O.tion</h1>
+        <h1>Live in Flow Motion</h1>
         <p class="subtitle">ALIGNMENT • BREATH • INTENTION</p>
     </header>
     <div class="container">
         <section id="about">
             <h2>Approach</h2>
-            <p style="text-align: center; max-width: 600px; margin: 0 auto;">
-                Finding stillness in movement. Every practice is an invitation to explore alignment, deepen the breath, and experience the profound quiet of the present moment.
-            </p>
-        </section>
-        <section id="offerings">
-            <h2>Offerings</h2>
-            <div class="services-grid">
-                <div class="service-item"><h3>Vinyasa</h3><p>Flow and alignment focused practice.</p></div>
-                <div class="service-item"><h3>Yin</h3><p>Meditation in long-held stillness.</p></div>
-                <div class="service-item"><h3>Sound</h3><p>Auditory rest and restoration.</p></div>
+            <div class="approach-text">
+                <p>Modern life is fast, but our bodies often feel like they’re lagging behind. Whether it's the 9-to-5 desk hunch or a workout that leaves you feeling more brittle than balanced, your current Method of Operation might need an upgrade.</p>
+                <p style="margin-top: 25px;">​At Hello Flow M.O.tion, we don’t just teach yoga; we re-educate your movement. We focus on the "M.O."—the fundamental mechanics of how you move—so you can find a state of flow that lasts long after you leave the mat.</p>
             </div>
         </section>
-        <section style="text-align: center;">
-            <a href="mailto:hello@example.com" class="btn">Connect With Us</a>
+        <section id="offerings">
+            <h2>Our M.O.</h2>
+            <div class="services-grid">
+                <div class="service-item"><h3>Vinyasa</h3><p>Structural alignment meets fluid sequence.</p></div>
+                <div class="service-item"><h3>Yin</h3><p>Quiet stillness to target connective tissues.</p></div>
+                <div class="service-item"><h3>Sound</h3><p>Vibrational restoration for deeper rest.</p></div>
+            </div>
+        </section>
+        <section style="text-align: center; border-top: none;">
+            <a href="mailto:hello@example.com" class="btn">UPGRADE YOUR M.O.</a>
         </section>
     </div>
     <footer>&copy; 2026 Hello Flow M.O.tion LLC.</footer>
